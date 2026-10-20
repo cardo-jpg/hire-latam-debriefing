@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debriefing Get Hired · LATAM</title>
+<meta name="description" content="Debriefing do lançamento Get Hired (LATAM) — Hire International. O primeiro resultado negativo: os números, onde o funil quebrou (comparecimento) e o que replicar no próximo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --paper-2:#FBFAF6; --paper-3:#EFEBE2;
+    --ink:#1B1620; --ink-2:#3B3340; --ink-soft:#6A6072; --line:#E3DCD0; --line-2:#D5CCBD;
+    --plum:#7A1FA2; --plum-deep:#5A1478; --plum-wash:#F1E7F5;
+    --coral:#FF4D6D; --gold:#C08A1E;
+    --good:#1C8A54; --bad:#C7371F;
+    --c-vendas:#2563EB; --c-rmkt:#7A1FA2; --c-esc:#D97706; --c-ing:#0891B2;
+    --sans:'Inter',system-ui,sans-serif; --disp:'Bricolage Grotesque',sans-serif; --mono:'JetBrains Mono',monospace;
+    --mw:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:120%;}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--mw);margin:0 auto;padding:0 26px;}
+  .disp{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;line-height:1.02;text-wrap:balance;}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--plum);}
+  a{color:inherit;}
+  ::selection{background:var(--plum);color:#fff;}
+
+  .hero{position:relative;padding:80px 0 56px;border-bottom:1px solid var(--line);overflow:hidden;}
+  .hero::before{content:"";position:absolute;top:-160px;right:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(199,55,31,.10),transparent 68%);pointer-events:none;}
+  .hero .eyebrow{margin-bottom:20px;display:inline-block;}
+  .hero h1{font-size:clamp(2.7rem,7.4vw,5.1rem);}
+  .hero h1 .l2{display:block;color:var(--bad);position:relative;}
+  .hero h1 .l2::after{content:"";position:absolute;left:2px;bottom:.06em;width:.42em;height:.11em;background:var(--gold);border-radius:2px;}
+  .hero .thesis{max-width:64ch;margin-top:24px;font-size:1.1rem;color:var(--ink-2);}
+  .hero .thesis b{color:var(--ink);font-weight:600;}
+  .glance{display:flex;flex-wrap:wrap;gap:0;margin-top:42px;border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--paper-2);}
+  .glance .g{flex:1 1 150px;padding:18px 22px;border-right:1px solid var(--line);}
+  .glance .g:last-child{border-right:none;}
+  .glance .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
+  .glance .n{font-family:var(--disp);font-weight:800;font-size:2rem;margin-top:5px;font-variant-numeric:tabular-nums;}
+  .glance .d{font-size:.78rem;color:var(--ink-soft);margin-top:1px;}
+  .glance .n.up{color:var(--good);} .glance .n.pl{color:var(--plum);} .glance .n.bad{color:var(--bad);} .glance .n.sm{font-size:1.5rem;line-height:1.1;}
+
+  .nav{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav .inner{max-width:var(--mw);margin:0 auto;padding:11px 26px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+  .nav .brand{font-family:var(--disp);font-weight:800;font-size:.95rem;margin-right:auto;letter-spacing:-.01em;}
+  .nav a{font-size:.8rem;font-weight:500;text-decoration:none;color:var(--ink-2);padding:6px 11px;border-radius:20px;transition:.15s;}
+  .nav a:hover{background:var(--plum-wash);color:var(--plum);}
+
+  section{padding:64px 0;border-bottom:1px solid var(--line);}
+  .shead{max-width:720px;margin-bottom:34px;}
+  .shead .rn{font-family:var(--mono);font-size:.78rem;color:var(--plum);letter-spacing:.1em;}
+  .shead h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.8rem,4.2vw,2.7rem);margin-top:10px;}
+  .shead p{margin-top:14px;font-size:1.02rem;color:var(--ink-2);}
+  .shead p b{color:var(--ink);font-weight:600;}
+
+  .act{padding:60px 0 8px;border-bottom:none;}
+  .act .lab{font-family:var(--mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);}
+  .act h2{font-family:var(--disp);font-weight:800;font-size:clamp(2.1rem,5.6vw,3.4rem);margin-top:8px;line-height:1.02;}
+  .act h2 .ac{color:var(--plum);} .act h2 .bd{color:var(--bad);}
+  .act p{margin-top:14px;font-size:1.05rem;color:var(--ink-2);max-width:62ch;}
+
+  .letter{background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--bad);border-radius:18px;padding:30px 34px;}
+  .letter p{font-size:1.05rem;color:var(--ink-2);line-height:1.62;} .letter p + p{margin-top:14px;} .letter b{color:var(--ink);font-weight:600;}
+  .letter .by{margin-top:20px;font-family:var(--mono);font-size:.76rem;color:var(--ink-soft);} .letter .by b{color:var(--plum);}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1);}
+  .reveal.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:0;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);}
+  .stat{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .stat .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
+  .stat .n{font-family:var(--disp);font-weight:800;font-size:2.2rem;margin-top:8px;font-variant-numeric:tabular-nums;line-height:1;}
+  .stat .n small{font-family:var(--sans);font-size:.9rem;font-weight:500;color:var(--ink-soft);}
+  .stat .d{font-size:.8rem;color:var(--ink-soft);margin-top:7px;}
+  .stat .n.up{color:var(--good);} .stat .n.pl{color:var(--plum);} .stat .n.gd{color:var(--good);} .stat .n.wn{color:var(--gold);} .stat .n.bad{color:var(--bad);}
+  .stat .n.sm{font-size:1.55rem;line-height:1.12;overflow-wrap:break-word;}
+
+  .callouts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;}
+  @media(max-width:680px){.callouts{grid-template-columns:1fr;}}
+  .call{padding:20px 22px;border-radius:16px;border:1px solid var(--line-2);background:var(--paper-2);}
+  .call .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--plum);}
+  .call.good{border-color:rgba(28,138,84,.35);background:#F0F6F1;} .call.good .tag{color:var(--good);}
+  .call.warn{border-color:rgba(192,138,30,.4);background:#F8F2E4;} .call.warn .tag{color:var(--gold);}
+  .call.bad{border-color:rgba(199,55,31,.35);background:#F9EDEA;} .call.bad .tag{color:var(--bad);}
+  .call p{margin-top:8px;font-size:.94rem;color:var(--ink-2);} .call p b{color:var(--ink);font-weight:600;}
+
+  .tl{position:relative;padding-left:30px;}
+  .tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line-2);}
+  .tlrow{position:relative;padding:0 0 22px 22px;}
+  .tlrow:last-child{padding-bottom:0;}
+  .tlrow::before{content:"";position:absolute;left:-27px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--plum);}
+  .tlrow .dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--plum);font-weight:700;}
+  .tlrow .ti{font-family:var(--disp);font-weight:700;font-size:1.05rem;margin-top:3px;}
+  .tlrow .ds{font-size:.9rem;color:var(--ink-2);margin-top:3px;}
+
+  /* Funil */
+  .funnel{display:flex;flex-direction:column;gap:11px;border:1px solid var(--line-2);border-radius:18px;background:var(--paper-2);padding:26px 24px;}
+  .fstep .lab{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:5px;gap:10px;}
+  .fstep .lab .nmm{color:var(--ink-soft);} .fstep .lab .nmm b{color:var(--ink);font-family:var(--mono);font-weight:700;font-size:.95rem;}
+  .fstep .lab .rt{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);text-align:right;}
+  .ftrack{height:38px;background:var(--paper-3);border-radius:9px;overflow:hidden;}
+  .fbar{height:100%;display:flex;align-items:center;padding-left:14px;font-family:var(--mono);font-weight:700;font-size:.86rem;color:#fff;border-radius:9px;min-width:60px;white-space:nowrap;transition:width .9s cubic-bezier(.2,.6,.2,1);}
+  .fb1{background:var(--c-ing);} .fb2{background:var(--c-vendas);} .fb3{background:var(--bad);} .fb4{background:var(--plum);}
+
+  .tblw{border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:520px;}
+  thead th{font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);text-align:right;padding:13px 16px;background:var(--paper-3);font-weight:700;}
+  thead th:first-child{text-align:left;}
+  tbody td{padding:12px 16px;text-align:right;border-top:1px solid var(--line);font-variant-numeric:tabular-nums;}
+  tbody td:first-child{text-align:left;font-weight:600;}
+  tbody tr:hover{background:var(--plum-wash);}
+  tbody tr.hi{background:var(--plum-wash);}
+  tbody tr.tot td{border-top:2px solid var(--line-2);font-weight:700;background:var(--paper-3);}
+  .up{color:var(--good);font-weight:700;} .dn{color:var(--bad);font-weight:700;}
+
+  .patterns{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:22px;}
+  .pat{padding:20px;border-radius:16px;background:var(--paper-2);border:1px solid var(--line-2);border-top:3px solid var(--pc,var(--plum));}
+  .pat h4{font-family:var(--disp);font-weight:700;font-size:1.05rem;color:var(--ink);}
+  .pat .lead2{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--pc,var(--plum));margin-bottom:8px;}
+  .pat p{font-size:.88rem;color:var(--ink-2);margin-top:4px;} .pat p b{color:var(--ink);font-weight:600;}
+
+  /* Onde quebrou */
+  .errs{display:grid;gap:16px;}
+  .err{display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start;padding:22px 24px;border:1px solid var(--line-2);border-left:5px solid var(--bad);border-radius:16px;background:var(--paper-2);}
+  .err .no{font-family:var(--disp);font-weight:800;font-size:1.5rem;color:var(--bad);font-variant-numeric:tabular-nums;}
+  .err h4{font-family:var(--disp);font-weight:800;font-size:1.18rem;}
+  .err p{font-size:.92rem;color:var(--ink-2);margin-top:7px;} .err p b{color:var(--ink);font-weight:600;}
+  .err .fix{margin-top:11px;font-size:.86rem;color:var(--ink-2);border-left:2.5px solid var(--good);padding:3px 0 3px 13px;} .err .fix b{color:var(--good);}
+
+  .recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px;}
+  .rec{padding:22px;border-radius:16px;background:var(--paper-2);border:1px solid var(--line-2);}
+  .rec .rn2{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--plum);font-weight:700;}
+  .rec h4{font-family:var(--disp);font-weight:800;font-size:1.1rem;margin-top:6px;}
+  .rec p{font-size:.89rem;color:var(--ink-2);margin-top:8px;} .rec p b{color:var(--ink);font-weight:600;}
+
+  .proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);margin-top:4px;}
+  .proj .pc{padding:20px 22px;border-right:1px solid var(--line);}
+  .proj .pc:last-child{border-right:none;}
+  .proj .pc.now{background:#F9EDEA;} .proj .pc.goal{background:#F0F6F1;}
+  .proj .pk{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);}
+  .proj .pv{font-family:var(--disp);font-weight:800;font-size:1.7rem;margin-top:6px;font-variant-numeric:tabular-nums;}
+  .proj .pd{font-size:.78rem;color:var(--ink-soft);margin-top:4px;}
+  .proj .pv.bad{color:var(--bad);} .proj .pv.good{color:var(--good);}
+
+  .note{margin-top:22px;font-size:.82rem;color:var(--ink-soft);background:var(--paper-2);border:1px dashed var(--line-2);border-radius:14px;padding:18px 20px;line-height:1.55;}
+  .note b{color:var(--ink-2);}
+
+  .foot{padding:56px 0 44px;}
+  .sig{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:.04em;} .sig b{color:var(--plum);}
+  .foot-links{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;}
+  .foot-links a{font-family:var(--mono);font-size:.8rem;font-weight:700;text-decoration:none;color:var(--plum);background:var(--plum-wash);border:1px solid var(--line-2);padding:8px 14px;border-radius:20px;}
+  .foot-links a:hover{background:var(--plum);color:#fff;}
+  .disclaim{font-size:.74rem;color:var(--ink-soft);margin-top:12px;max-width:72ch;line-height:1.55;}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="inner">
+  <span class="brand">Cardô<span style="color:var(--plum)">.</span></span>
+  <a href="#placar">Placar</a>
+  <a href="#captacao">Captação</a>
+  <a href="#aula">A aula</a>
+  <a href="#vendas">Vendas</a>
+  <a href="#diagnostico">O que quebrou</a>
+  <a href="#replicar">O próximo</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">Debriefing · Get Hired · LATAM · Hire International</span>
+  <h1 class="disp">A captação voou.<span class="l2">O lançamento deu negativo.</span></h1>
+  <p class="thesis">A Masterclass <b>Get Hired</b> trouxe <b>4.255 leads</b> (212% da meta) com CPL de <b>R$ 4,19</b> — e mesmo assim fechou com <b>prejuízo de R$ 9.003</b>, o primeiro resultado negativo. Este documento mostra por quê, com uma resposta clara: o funil não quebrou na captação nem no pitch — quebrou no <b>comparecimento</b> (6,18% vs. meta de 30%). E mostra que mexer nessa única alavanca já viraria o jogo.</p>
+  <div class="glance">
+    <div class="g"><div class="k">Faturamento bruto</div><div class="n pl sm">R$ 19.851,50</div><div class="d">32% da meta · US$ 3.854,66</div></div>
+    <div class="g"><div class="k">Lucro do lançamento</div><div class="n bad sm">−R$ 9.003,24</div><div class="d">ROI −31% · primeiro negativo</div></div>
+    <div class="g"><div class="k">Leads captados</div><div class="n up">4.255</div><div class="d">212% da meta · CPL R$ 4,19</div></div>
+    <div class="g"><div class="k">Comparecimento</div><div class="n bad">6,18%</div><div class="d">meta 30% · o furo central</div></div>
+  </div>
+</div></header>
+
+<div class="wrap">
+
+  <!-- CARTA -->
+  <section style="border-bottom:none;padding-bottom:20px">
+    <div class="letter reveal">
+      <p>Esse é o <b>primeiro lançamento no negativo</b> — e a gente trouxe ele inteiro, sem maquiar. Mas negativo não é fracasso quando ensina: este debriefing é pra <b>extrair o que replicar e o que corrigir</b>, não pra lamentar.</p>
+      <p>A leitura rápida: a <b>captação foi um sucesso</b> (4.255 leads, 212% da meta, CPL baixíssimo) e <b>quem ficou no pitch quase não saiu</b> (retenção de 88,5%). O problema mora no meio: de 4.255 leads, só <b>263 apareceram ao vivo</b>. Com 6% de comparecimento, nenhuma captação boa e nenhum pitch bom conseguem pagar a conta. Resolver esse um ponto é o que separa este lançamento de um positivo.</p>
+      <div class="by">Cardô Marketing · gestão de tráfego · para a equipe <b>Hire International</b></div>
+    </div>
+  </section>
+
+  <!-- ATO 1 -->
+  <div class="act reveal"><div class="lab">Ato 1</div><h2 class="disp">Os <span class="ac">números</span> do lançamento</h2>
+    <p>Do investimento ao resultado — captação, WhatsApp, aula ao vivo, vendas e custos.</p></div>
+
+  <!-- LINHA DO TEMPO + PLACAR -->
+  <section id="placar">
+    <div class="shead reveal"><div class="rn">I</div><h2 class="disp">Linha do tempo e placar</h2>
+      <p>Masterclass <b>Get Hired</b> em <b>20/09</b> (19h Colômbia / 21h Brasil), oferta de <b>US$ 197</b> (US$ 297 com call). Captação abriu em <b>31/08</b> e o carrinho ficou aberto de <b>20 a 27/09</b>.</p></div>
+    <div class="tl reveal" style="margin-bottom:34px">
+      <div class="tlrow"><div class="dt">31/08</div><div class="ti">Início da captação</div><div class="ds">Tráfego e orgânico abrem a captação de leads pra Masterclass (Colômbia + México).</div></div>
+      <div class="tlrow"><div class="dt">20/09 · 19h/21h</div><div class="ti">Masterclass ao vivo + abertura do carrinho</div><div class="ds">A aula com o pitch do Get Hired; o carrinho abre na sequência.</div></div>
+      <div class="tlrow"><div class="dt">20 → 27/09</div><div class="ti">Carrinho aberto</div><div class="ds">Vendas diretas + time comercial + automáticas (replay).</div></div>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="k">Faturamento bruto</div><div class="n pl sm">R$ 19.851,50</div><div class="d">líq. R$ 18.955,14 · 32% da meta</div></div>
+      <div class="stat"><div class="k">Custos totais</div><div class="n sm">R$ 28.854,74</div><div class="d">US$ 5.602,86</div></div>
+      <div class="stat"><div class="k">Lucro</div><div class="n bad sm">−R$ 9.003,24</div><div class="d">−US$ 1.748,20</div></div>
+      <div class="stat"><div class="k">Vendas</div><div class="n">16<small> / 60</small></div><div class="d">27% da meta · 1 reembolso</div></div>
+      <div class="stat"><div class="k">Ticket médio</div><div class="n sm">R$ 1.240,72</div><div class="d">câmbio US$ 5,15</div></div>
+      <div class="stat"><div class="k">ROI</div><div class="n bad">−31%</div><div class="d">devolveu R$ 0,69 por R$ 1</div></div>
+    </div>
+  </section>
+
+  <!-- CAPTAÇÃO -->
+  <section id="captacao">
+    <div class="shead reveal"><div class="rn">II</div><h2 class="disp">Captação — o que mais funcionou</h2>
+      <p>A frente que a gente controla direto <b>bateu 212% da meta</b> com custo por lead baixíssimo. Aqui não houve problema nenhum.</p></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="k">Leads captados</div><div class="n up">4.255</div><div class="d">meta 2.000 · 212,75%</div></div>
+      <div class="stat"><div class="k">CPL (anúncio)</div><div class="n gd sm">R$ 4,19</div><div class="d">captação R$ 17,7k ÷ 4.217</div></div>
+      <div class="stat"><div class="k">Share pago</div><div class="n">99,1%</div><div class="d">orgânico só 0,9% (38 leads)</div></div>
+      <div class="stat"><div class="k">WhatsApp</div><div class="n pl">2.835</div><div class="d">66,63% dos leads no grupo</div></div>
+    </div>
+    <div class="tblw reveal" style="margin-top:20px">
+      <table>
+        <thead><tr><th>Origem</th><th>Leads</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr><td>ADS México</td><td>1.251</td><td>29,4%</td></tr>
+          <tr><td>ADS Geral</td><td>1.789</td><td>42,0%</td></tr>
+          <tr><td>ADS Colômbia</td><td>1.177</td><td>27,7%</td></tr>
+          <tr><td>Orgânico</td><td>38</td><td>0,9%</td></tr>
+          <tr class="tot"><td>Total</td><td>4.255</td><td>100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callouts reveal">
+      <div class="call good"><div class="tag">✓ Replicar</div><p><b>CPL de R$ 4,19 e 212% da meta.</b> Os criativos e a estrutura de captação funcionam — isso volta igual no próximo.</p></div>
+      <div class="call good"><div class="tag">✓ Replicar</div><p><b>66,63% dos leads entraram no grupo de WhatsApp</b> (2.835 pessoas). O canal de aquecimento está montado; faltou usá-lo pra garantir presença.</p></div>
+    </div>
+  </section>
+
+  <!-- A AULA (COMPARECIMENTO) -->
+  <section id="aula">
+    <div class="shead reveal"><div class="rn">III</div><h2 class="disp">A aula ao vivo — onde tudo travou</h2>
+      <p>Aqui está o furo. De 4.255 leads, a média ao vivo foi de <b>263 pessoas</b> — <b>6,18% de comparecimento</b>, contra a meta de 30%. Quem ficou, porém, <b>segurou até o fim</b>.</p></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="k">Comparecimento médio</div><div class="n bad">263</div><div class="d">pico de 307 pessoas</div></div>
+      <div class="stat"><div class="k">% de comparecimento</div><div class="n bad">6,18%</div><div class="d">meta era 30%</div></div>
+      <div class="stat"><div class="k">Retenção no pitch</div><div class="n gd">88,52%</div><div class="d">305 no início → 270 no fim</div></div>
+      <div class="stat"><div class="k">WhatsApp → ao vivo</div><div class="n wn sm">9,3%</div><div class="d">só 263 dos 2.835 do grupo</div></div>
+    </div>
+    <div class="callouts reveal">
+      <div class="call bad"><div class="tag">✗ O furo</div><p><b>6,18% é um quinto da meta.</b> O comparecimento saudável de webinário fica entre 25% e 40%. A 6%, todo o investimento de captação (R$ 17,7k) fica preso em leads que nunca viram a oferta.</p></div>
+      <div class="call good"><div class="tag">✓ O que deu certo</div><p><b>Retenção de 88,52% no pitch.</b> A aula e a oferta prendem quem está na sala. O conteúdo não é o problema — é fazer a pessoa aparecer.</p></div>
+    </div>
+  </section>
+
+  <!-- VENDAS + CUSTOS -->
+  <section id="vendas">
+    <div class="shead reveal"><div class="rn">IV</div><h2 class="disp">Vendas e custos</h2>
+      <p><b>16 vendas</b> (27% da meta de 60), metade fechada pelo time comercial. O custo de adquirir cada cliente ficou <b>maior que o ticket</b> — e é isso que vira o resultado no vermelho.</p></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="k">Vendas totais</div><div class="n">16<small> / 60</small></div><div class="d">1 reembolso</div></div>
+      <div class="stat"><div class="k">Pelo time comercial</div><div class="n pl">56%</div><div class="d">9 vendas · 7 diretas</div></div>
+      <div class="stat"><div class="k">Conversão da aula</div><div class="n wn sm">3,3%</div><div class="d">vendas no carrinho aberto</div></div>
+      <div class="stat"><div class="k">CAC marketing</div><div class="n bad sm">R$ 1.721</div><div class="d">138,7% do ticket (R$ 1.241)</div></div>
+    </div>
+    <div class="tblw reveal" style="margin-top:20px">
+      <table>
+        <thead><tr><th>Custo</th><th>Valor</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>Tráfego pago</td><td>R$ 20.824,66</td><td>72,2%</td></tr>
+          <tr><td>— captação</td><td>R$ 17.676,72</td><td>61,3%</td></tr>
+          <tr><td>— vendas / lembrete / replay</td><td>R$ 3.147,94</td><td>10,9%</td></tr>
+          <tr><td>Equipe e serviços</td><td>R$ 5.634,00</td><td>19,5%</td></tr>
+          <tr><td>Ferramentas (API)</td><td>R$ 1.077,78</td><td>3,7%</td></tr>
+          <tr><td>Taxa de plataforma</td><td>R$ 896,36</td><td>3,1%</td></tr>
+          <tr><td>Comissões do time*</td><td>R$ 421,94</td><td>1,5%</td></tr>
+          <tr class="tot"><td>Total</td><td>R$ 28.854,74</td><td>100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note reveal"><b>Leitura do CAC:</b> adquirir um cliente custou <b>R$ 1.721</b> em marketing, mas o ticket médio é <b>R$ 1.240</b> — ou seja, a operação <b>perde ~R$ 480 em cada venda</b> só no custo de aquisição. Com 16 vendas, isso não fecha. O CAC alto é consequência direta do comparecimento baixo: pagou-se por 4.255 leads e só 263 chegaram à oferta. <b>*As comissões do time (R$ 421,94) estão marcadas pra confirmar com a Aline.</b></div>
+  </section>
+
+  <!-- ATO 2 -->
+  <div class="act reveal"><div class="lab">Ato 2</div><h2 class="disp">A <span class="bd">leitura</span>: onde o dinheiro vazou</h2>
+    <p>Um funil, quatro etapas. Três delas foram bem. Uma afundou o resultado.</p></div>
+
+  <section id="diagnostico">
+    <div class="shead reveal"><div class="rn">V</div><h2 class="disp">O funil, em quatro degraus</h2>
+      <p>Veja o salto brutal entre o grupo de WhatsApp e a presença ao vivo: <b>de 2.835 para 263</b>. É nesse degrau que o lançamento foi decidido.</p></div>
+    <div class="funnel reveal">
+      <div class="fstep"><div class="lab"><span class="nmm">Leads captados <b>4.255</b></span><span class="rt">212% da meta · CPL R$ 4,19</span></div><div class="ftrack"><div class="fbar fb1" style="width:100%">100%</div></div></div>
+      <div class="fstep"><div class="lab"><span class="nmm">No grupo de WhatsApp <b>2.835</b></span><span class="rt">66,6% dos leads</span></div><div class="ftrack"><div class="fbar fb2" style="width:66.6%">66,6%</div></div></div>
+      <div class="fstep"><div class="lab"><span class="nmm">Ao vivo na aula <b>263</b></span><span class="rt">6,18% dos leads · meta 30%</span></div><div class="ftrack"><div class="fbar fb3" style="width:6.18%">6,2%</div></div></div>
+      <div class="fstep"><div class="lab"><span class="nmm">Vendas <b>16</b></span><span class="rt">6,08% de quem assistiu</span></div><div class="ftrack"><div class="fbar fb4" style="width:2.5%">0,4%</div></div></div>
+    </div>
+
+    <div class="errs reveal" style="margin-top:28px">
+      <div class="err">
+        <div class="no">1</div>
+        <div>
+          <h4>O comparecimento (6,18% vs. 30%)</h4>
+          <p>O furo central. Captamos 4.255 pessoas e <b>só 263 apareceram ao vivo</b>. Dos 2.835 que entraram no WhatsApp, 9 em cada 10 não voltaram pra aula. Toda a eficiência da captação morre aqui.</p>
+          <div class="fix"><b>Corrigir:</b> sequência de lembretes muito mais agressiva (o grupo de 2.835 já existe), confirmação ativa de presença, bônus exclusivo pra quem está ao vivo, e revisar o <b>horário por fuso</b> (19h Colômbia / 21h Brasil) — pode ter pesado contra o público LATAM.</p>
+        </div>
+      </div>
+      <div class="err">
+        <div class="no">2</div>
+        <div>
+          <h4>Lead barato não é lead qualificado</h4>
+          <p>CPL de R$ 4,19 é ótimo no papel, mas 4.255 leads que não aparecem valem menos que 1.000 que aparecem. O volume altíssimo + comparecimento baixíssimo sugere <b>muito lead frio / de baixa intenção</b> entrando na base.</p>
+          <div class="fix"><b>Corrigir:</b> aceitar um CPL um pouco maior em troca de qualificação (filtro de intenção/idioma no criativo e na página), priorizando quem realmente comparece.</div>
+        </div>
+      </div>
+      <div class="err">
+        <div class="no">3</div>
+        <div>
+          <h4>CAC maior que o ticket (estrutural)</h4>
+          <p>Custou <b>R$ 1.721</b> pra trazer um cliente que paga <b>R$ 1.240</b>. Nessa relação, quanto mais vende, mais perde. É consequência do item 1, mas também pede atenção à oferta.</p>
+          <div class="fix"><b>Corrigir:</b> com o comparecimento arrumado o CAC já cai sozinho; além disso, testar <b>order bump / upsell</b> e a oferta de US$ 297 (call) pra subir o ticket médio.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATO 3 -->
+  <div class="act reveal"><div class="lab">Ato 3</div><h2 class="disp">O <span class="ac">próximo</span>: o que muda</h2>
+    <p>O que mantém, o que corrige, e a conta que prova onde está a alavanca.</p></div>
+
+  <!-- PROJEÇÃO -->
+  <section id="replicar">
+    <div class="shead reveal"><div class="rn">VI</div><h2 class="disp">A alavanca: comparecimento</h2>
+      <p>Mantendo <b>tudo igual</b> (mesma captação, mesmo pitch, mesma taxa de conversão de quem assiste) e mexendo <b>só no comparecimento</b>, veja o que acontece:</p></div>
+    <div class="proj reveal">
+      <div class="pc now"><div class="pk">Hoje · 6,18%</div><div class="pv bad">−R$ 9,0k</div><div class="pd">263 ao vivo · 16 vendas</div></div>
+      <div class="pc"><div class="pk">A 12%</div><div class="pv good">+R$ 9,7k</div><div class="pd">511 ao vivo · ~31 vendas</div></div>
+      <div class="pc"><div class="pk">A 18%</div><div class="pv good">+R$ 29k</div><div class="pd">766 ao vivo · ~47 vendas</div></div>
+      <div class="pc goal"><div class="pk">Meta · 30%</div><div class="pv good">+R$ 67k</div><div class="pd">1.276 ao vivo · ~78 vendas</div></div>
+    </div>
+    <div class="note reveal"><b>Como ler:</b> bastava <b>dobrar o comparecimento</b> (de 6% pra 12%, ainda bem abaixo da meta) pra o lançamento já virar positivo. Não precisa de mais verba, mais lead ou pitch melhor — precisa fazer quem já se cadastrou <b>aparecer</b>. É o melhor retorno sobre esforço que existe pro próximo. <span style="opacity:.8">(Projeção mantendo a taxa de conversão de 6,08% de quem assiste; serve de direção, não de promessa.)</span></div>
+  </section>
+
+  <!-- O QUE REPLICAR / CORRIGIR -->
+  <section>
+    <div class="shead reveal"><div class="rn">VII</div><h2 class="disp">O plano do próximo lançamento</h2>
+      <p>Três coisas pra manter idênticas e três pra atacar.</p></div>
+    <div style="margin-bottom:10px;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--good);font-weight:700">✓ Manter (funcionou)</div>
+    <div class="recs reveal">
+      <div class="rec"><div class="rn2">Captação</div><h4>Criativos e estrutura</h4><p>CPL R$ 4,19 e 212% da meta. Os anúncios de captação voltam iguais.</p></div>
+      <div class="rec"><div class="rn2">WhatsApp</div><h4>Grupos de aquecimento</h4><p>66,63% dos leads entraram no grupo. O canal está montado — agora é usá-lo pra puxar presença.</p></div>
+      <div class="rec"><div class="rn2">Pitch</div><h4>Aula e oferta</h4><p>88,52% de retenção. Quem fica, compra na mesma proporção. Não mexer no que prende.</p></div>
+    </div>
+    <div style="margin:28px 0 10px;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bad);font-weight:700">✗ Atacar (quebrou)</div>
+    <div class="recs reveal">
+      <div class="rec" style="border-left:4px solid var(--bad)"><div class="rn2" style="color:var(--bad)">Prioridade 1</div><h4>Comparecimento</h4><p>Sequência de lembretes forte (WhatsApp + e-mail), confirmação ativa, <b>bônus só pra quem está ao vivo</b>, e revisar o horário por fuso. Meta mínima: dobrar pra 12%+.</p></div>
+      <div class="rec" style="border-left:4px solid var(--bad)"><div class="rn2" style="color:var(--bad)">Prioridade 2</div><h4>Qualificação do lead</h4><p>Aceitar CPL um pouco maior em troca de intenção real (filtro no criativo/página). Vale mais lead que aparece do que lead barato.</p></div>
+      <div class="rec" style="border-left:4px solid var(--bad)"><div class="rn2" style="color:var(--bad)">Prioridade 3</div><h4>Ticket e CAC</h4><p>Order bump/upsell e reforço da oferta de US$ 297 (call) pra subir o ticket, enquanto o comparecimento derruba o CAC.</p></div>
+    </div>
+  </section>
+
+  <section class="foot" style="border-bottom:none">
+    <div class="foot-links reveal">
+      <a href="https://cardo-jpg.github.io/latam-dash/" target="_blank">Dashboard LATAM ao vivo →</a>
+    </div>
+    <div class="sig reveal">Debriefing interno · <b>Cardô Marketing</b> × Hire International · lançamento Get Hired (LATAM)</div>
+    <p class="disclaim reveal">Números da planilha oficial do lançamento (câmbio US$ 5,15) e da dashboard de tráfego. Faturamento líquido mantém o valor bruto nas 3 vendas via Mundpay (a plataforma não informa o líquido). As comissões do time comercial (R$ 421,94) estão pendentes de confirmação com a Aline. As faixas de comparecimento (25–40%) são referência de mercado; a projeção da seção VI mantém a taxa de conversão real de quem assiste e serve de direção, não de garantia.</p>
+  </section>
+
+</div>
+
+<script>
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
