@@ -32,7 +32,7 @@
   .hero::before{content:"";position:absolute;top:-160px;right:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(199,55,31,.10),transparent 68%);pointer-events:none;}
   .hero .eyebrow{margin-bottom:20px;display:inline-block;}
   .hero h1{font-size:clamp(2.7rem,7.4vw,5.1rem);}
-  .hero h1 .l2{display:block;color:var(--bad);position:relative;}
+  .hero h1 .l2{display:block;color:var(--plum);position:relative;}
   .hero h1 .l2::after{content:"";position:absolute;left:2px;bottom:.06em;width:.42em;height:.11em;background:var(--gold);border-radius:2px;}
   .hero .thesis{max-width:64ch;margin-top:24px;font-size:1.1rem;color:var(--ink-2);}
   .hero .thesis b{color:var(--ink);font-weight:600;}
@@ -123,6 +123,7 @@
   a.crl:hover{color:var(--plum);border-bottom-color:var(--plum);}
   .crl .ext{font-family:var(--mono);font-size:.6rem;color:var(--plum);margin-left:7px;letter-spacing:.04em;white-space:nowrap;}
   .tblw .crtbl td:nth-child(2),.tblw .crtbl th:nth-child(2){text-align:left;}
+  .pend{display:none!important;}
 
   .patterns{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:22px;}
   .patc{background:var(--paper-2);border:1px solid var(--line-2);border-radius:14px;padding:18px 20px;}
@@ -186,8 +187,8 @@
   <h1 class="disp">A captação voou.<span class="l2">O lançamento deu negativo.</span></h1>
   <p class="thesis">A Masterclass <b>Get Hired</b> trouxe <b>4.255 leads</b> (212% da meta) com CPL de <b>R$ 2,80</b> — e mesmo assim fechou com <b>prejuízo de R$ 6.084</b>, o primeiro resultado negativo. Este documento mostra por quê, com uma resposta clara: o funil não quebrou na captação nem no pitch — quebrou no <b>comparecimento</b> (6,18% vs. meta de 30%). E mostra que mexer nessa única alavanca já viraria o jogo.</p>
   <div class="glance">
-    <div class="g"><div class="k">Faturamento bruto</div><div class="n pl sm">R$ 19.851,50</div><div class="d">32% da meta · US$ 3.854,66</div></div>
-    <div class="g"><div class="k">Lucro do lançamento</div><div class="n bad sm">−R$ 6.083,95</div><div class="d">ROI −23% · primeiro negativo</div></div>
+    <div class="g pend"><div class="k">Faturamento bruto</div><div class="n pl sm">R$ 19.851,50</div><div class="d">32% da meta · US$ 3.854,66</div></div>
+    <div class="g pend"><div class="k">Lucro do lançamento</div><div class="n bad sm">−R$ 6.083,95</div><div class="d">ROI −23% · primeiro negativo</div></div>
     <div class="g"><div class="k">Leads captados</div><div class="n up">4.255</div><div class="d">212% da meta · CPL R$ 2,80</div></div>
     <div class="g"><div class="k">Comparecimento</div><div class="n bad">6,18%</div><div class="d">meta 30% · o furo central</div></div>
   </div>
@@ -218,12 +219,12 @@
       <div class="tlrow"><div class="dt">20 → 27/09</div><div class="ti">Carrinho aberto</div><div class="ds">Vendas diretas + time comercial + automáticas (replay).</div></div>
     </div>
     <div class="stats reveal">
-      <div class="stat"><div class="k">Faturamento bruto</div><div class="n pl sm">R$ 19.851,50</div><div class="d">líq. R$ 18.955,14 · 32% da meta</div></div>
-      <div class="stat"><div class="k">Custos totais</div><div class="n sm">R$ 25.935,45</div><div class="d">US$ 5.036,01</div></div>
-      <div class="stat"><div class="k">Lucro</div><div class="n bad sm">−R$ 6.083,95</div><div class="d">−US$ 1.181,35</div></div>
+      <div class="stat pend"><div class="k">Faturamento bruto</div><div class="n pl sm">R$ 19.851,50</div><div class="d">líq. R$ 18.955,14 · 32% da meta</div></div>
+      <div class="stat pend"><div class="k">Custos totais</div><div class="n sm">R$ 25.935,45</div><div class="d">US$ 5.036,01</div></div>
+      <div class="stat pend"><div class="k">Lucro</div><div class="n bad sm">−R$ 6.083,95</div><div class="d">−US$ 1.181,35</div></div>
       <div class="stat"><div class="k">Vendas</div><div class="n">16<small> / 60</small></div><div class="d">27% da meta · 1 reembolso</div></div>
-      <div class="stat"><div class="k">Ticket médio</div><div class="n sm">R$ 1.240,72</div><div class="d">câmbio US$ 5,15</div></div>
-      <div class="stat"><div class="k">ROI</div><div class="n bad">−23%</div><div class="d">devolveu R$ 0,77 por R$ 1</div></div>
+      <div class="stat pend"><div class="k">Ticket médio</div><div class="n sm">R$ 1.240,72</div><div class="d">câmbio US$ 5,15</div></div>
+      <div class="stat pend"><div class="k">ROI</div><div class="n bad">−23%</div><div class="d">devolveu R$ 0,77 por R$ 1</div></div>
     </div>
   </section>
 
@@ -323,12 +324,10 @@
       <div class="stat"><div class="k">Vendas totais</div><div class="n">16<small> / 60</small></div><div class="d">1 reembolso</div></div>
       <div class="stat"><div class="k">Pelo time comercial</div><div class="n pl">56%</div><div class="d">9 vendas · 7 diretas</div></div>
       <div class="stat"><div class="k">Conversão da aula</div><div class="n wn sm">3,3%</div><div class="d">vendas no carrinho aberto</div></div>
-      <div class="stat"><div class="k">CAC (custo total ÷ venda)</div><div class="n bad sm">R$ 1.621</div><div class="d">130,6% do ticket (R$ 1.241)</div></div>
       <div class="stat"><div class="k">Vendas rastreadas no tráfego</div><div class="n wn">2</div><div class="d">pixel Meta · AD008 + AD009</div></div>
     </div>
 
-    <div class="shead reveal" style="margin-top:34px"><h2 class="disp" style="font-size:1.6rem">Criativos de vendas · os que venderam</h2>
-      <p>Nos anúncios de venda o que conta é a venda, não o lead. Das 16 do lançamento, <b>2 foram rastreadas no pixel</b> — e as duas tiveram <b>custo por venda abaixo do ticket</b> (R$ 1.240), ou seja, unit economics positiva.</p></div>
+    <div class="shead reveal" style="margin-top:34px"><h2 class="disp" style="font-size:1.6rem">Criativos de vendas · os que venderam</h2></div>
     <div class="tblw reveal" style="margin-top:14px">
       <table class="crtbl">
         <thead><tr><th></th><th>Criativo</th><th>Investido</th><th>Vendas</th><th>Custo por venda</th></tr></thead>
