@@ -117,6 +117,12 @@
   tbody tr.hi{background:var(--plum-wash);}
   tbody tr.tot td{border-top:2px solid var(--line-2);font-weight:700;background:var(--paper-3);}
   .up{color:var(--good);font-weight:700;} .dn{color:var(--bad);font-weight:700;}
+  td.cthc{width:52px;padding:8px 0 8px 14px;}
+  .cth{width:44px;height:44px;border-radius:8px;object-fit:cover;display:block;background:var(--paper-3);border:1px solid var(--line-2);}
+  a.crl{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid transparent;}
+  a.crl:hover{color:var(--plum);border-bottom-color:var(--plum);}
+  .crl .ext{font-family:var(--mono);font-size:.6rem;color:var(--plum);margin-left:7px;letter-spacing:.04em;white-space:nowrap;}
+  .tblw .crtbl td:nth-child(2),.tblw .crtbl th:nth-child(2){text-align:left;}
 
   .patterns{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:22px;}
   .patc{background:var(--paper-2);border:1px solid var(--line-2);border-radius:14px;padding:18px 20px;}
@@ -251,21 +257,21 @@
     <div class="shead reveal" style="margin-top:38px"><h2 class="disp" style="font-size:1.6rem">Criativos de leads · CPL por anúncio</h2>
       <p>Os vídeos "soy reclutador" e "trabajar remoto" carregaram a captação com CPL abaixo de R$ 2,70. Dados do Gerenciador da Meta.</p></div>
     <div class="tblw reveal" style="margin-top:14px">
-      <table>
-        <thead><tr><th>Criativo</th><th>Investido</th><th>Leads</th><th>CPL</th></tr></thead>
+      <table class="crtbl">
+        <thead><tr><th></th><th>Criativo</th><th>Investido</th><th>Leads</th><th>CPL</th></tr></thead>
         <tbody>
-          <tr><td>AD15_VID_Soy_reclutador_internacional</td><td>R$ 4.452,33</td><td>1.663</td><td class="up">R$ 2,68</td></tr>
-          <tr><td>AD02_IMG_trabajar_remoto_esta_bien</td><td>R$ 2.713,43</td><td>1.184</td><td class="up">R$ 2,29</td></tr>
-          <tr><td>AD14_VID_trabalhar_en_remoto_estabien</td><td>R$ 1.438,60</td><td>546</td><td class="up">R$ 2,63</td></tr>
-          <tr><td>AD05_IMG_vivir_en_espana</td><td>R$ 1.039,58</td><td>376</td><td class="up">R$ 2,76</td></tr>
-          <tr><td>AD12_VID_Poderia_trabajando_Valencia</td><td>R$ 955,53</td><td>307</td><td>R$ 3,11</td></tr>
-          <tr><td>AD02_IMG_Mexico_No_necessitas_irte</td><td>R$ 804,02</td><td>185</td><td class="dn">R$ 4,35</td></tr>
-          <tr><td>AD06_CAR_como_ganar_en_dolares</td><td>R$ 332,64</td><td>108</td><td>R$ 3,08</td></tr>
-          <tr><td>AD01_IMG_Colombia_No_necessitas_anos</td><td>R$ 260,02</td><td>22</td><td class="dn">R$ 11,82</td></tr>
-          <tr><td>AD02_IMG_Colombia</td><td>R$ 201,73</td><td>23</td><td class="dn">R$ 8,77</td></tr>
-          <tr><td>AD16_VID_Si_me_escuchas</td><td>R$ 132,30</td><td>24</td><td class="dn">R$ 5,51</td></tr>
-          <tr><td>Outros 19 criativos</td><td>R$ 485,18</td><td>145</td><td>R$ 3,35</td></tr>
-          <tr class="tot"><td>Total · leads</td><td>R$ 12.815,36</td><td>4.583</td><td>R$ 2,80</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad15-vid-geral-soy-reclutador-internacional.jpg" alt="AD15"></td><td><a class="crl" href="https://www.instagram.com/p/Dcw2wh4A1mX/" target="_blank" rel="noopener">AD15_VID_Soy_reclutador_internacional <span class="ext">ver ↗</span></a></td><td>R$ 4.452,33</td><td>1.663</td><td class="up">R$ 2,68</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad02-img-geral-trabajar-remoto-esta-bien.jpg" alt="AD02"></td><td><a class="crl" href="https://www.instagram.com/p/DcrcYYkgitz/" target="_blank" rel="noopener">AD02_IMG_trabajar_remoto_esta_bien <span class="ext">ver ↗</span></a></td><td>R$ 2.713,43</td><td>1.184</td><td class="up">R$ 2,29</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad14-vid-geral-trabalhar-en-remoto-estabien.jpg" alt="AD14"></td><td><a class="crl" href="https://www.instagram.com/p/Dcw4extgo3s/" target="_blank" rel="noopener">AD14_VID_trabalhar_en_remoto_estabien <span class="ext">ver ↗</span></a></td><td>R$ 1.438,60</td><td>546</td><td class="up">R$ 2,63</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad05-img-geral-vivir-en-espana-no-tiene-que-ser-.jpg" alt="AD05"></td><td><a class="crl" href="https://www.instagram.com/p/DcrcYLIALb4/" target="_blank" rel="noopener">AD05_IMG_vivir_en_espana <span class="ext">ver ↗</span></a></td><td>R$ 1.039,58</td><td>376</td><td class="up">R$ 2,76</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad12-vid-geral-poderia-estar-trabajando-valencia.jpg" alt="AD12"></td><td><a class="crl" href="https://www.instagram.com/p/Dcw4esPA2p7/" target="_blank" rel="noopener">AD12_VID_Poderia_trabajando_Valencia <span class="ext">ver ↗</span></a></td><td>R$ 955,53</td><td>307</td><td>R$ 3,11</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad02-img-mexico-no-necessitas-irte-de-tu-pais.jpg" alt="AD02 Mexico"></td><td><a class="crl" href="https://www.instagram.com/p/DcrYJe_AhHr/" target="_blank" rel="noopener">AD02_IMG_Mexico_No_necessitas_irte <span class="ext">ver ↗</span></a></td><td>R$ 804,02</td><td>185</td><td class="dn">R$ 4,35</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad06-car-carrossel-como-ganar-en-dolares.jpg" alt="AD06"></td><td><a class="crl" href="https://www.instagram.com/p/Dc_qbsvgEwx/" target="_blank" rel="noopener">AD06_CAR_como_ganar_en_dolares <span class="ext">ver ↗</span></a></td><td>R$ 332,64</td><td>108</td><td>R$ 3,08</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad01-img-colombia-no-necessitas-anos.jpg" alt="AD01 Colombia"></td><td><a class="crl" href="https://www.instagram.com/p/DcrY2tGAmwe/" target="_blank" rel="noopener">AD01_IMG_Colombia_No_necessitas_anos <span class="ext">ver ↗</span></a></td><td>R$ 260,02</td><td>22</td><td class="dn">R$ 11,82</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad02-img-colombia-no-necessitas-irte-de-tu-pais.jpg" alt="AD02 Colombia"></td><td><a class="crl" href="https://www.instagram.com/p/DcrY2pygVUh/" target="_blank" rel="noopener">AD02_IMG_Colombia <span class="ext">ver ↗</span></a></td><td>R$ 201,73</td><td>23</td><td class="dn">R$ 8,77</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad16-vid-geral-si-me-escuchas.jpg" alt="AD16"></td><td><a class="crl" href="https://www.instagram.com/p/Dcw4ejTA20q/" target="_blank" rel="noopener">AD16_VID_Si_me_escuchas <span class="ext">ver ↗</span></a></td><td>R$ 132,30</td><td>24</td><td class="dn">R$ 5,51</td></tr>
+          <tr><td class="cthc"></td><td>Outros 19 criativos</td><td>R$ 485,18</td><td>145</td><td>R$ 3,35</td></tr>
+          <tr class="tot"><td class="cthc"></td><td>Total · leads</td><td>R$ 12.815,36</td><td>4.583</td><td>R$ 2,80</td></tr>
         </tbody>
       </table>
     </div>
@@ -339,22 +345,15 @@
     </div>
     <div class="note reveal"><b>Leitura do CAC:</b> adquirir um cliente custou <b>R$ 1.621</b> (custo total ÷ 16 vendas), mas o ticket médio é <b>R$ 1.240</b> — ou seja, a operação <b>perde ~R$ 380 em cada venda</b>. Com 16 vendas, isso não fecha. O CAC alto é consequência direta do comparecimento baixo: pagou-se por 4.255 leads e só 263 chegaram à oferta. <b>Números de mídia recompostos pelo Gerenciador da Meta (fonte da verdade), não pela planilha. *Comissões do time (R$ 421,94) a confirmar com a Aline.</b></div>
 
-    <div class="shead reveal" style="margin-top:34px"><h2 class="disp" style="font-size:1.6rem">Criativos de vendas · CPL por anúncio</h2>
-      <p>Pós-carrinho, o CPL salta pra <b>R$ 28,29</b> em média (10× o da captação) — público menor e mais caro. As duas vendas rastreadas saíram do AD008 e do AD009.</p></div>
+    <div class="shead reveal" style="margin-top:34px"><h2 class="disp" style="font-size:1.6rem">Criativos de vendas · os que venderam</h2>
+      <p>Nos anúncios de venda o que conta é a venda, não o lead. Das 16 do lançamento, <b>2 foram rastreadas no pixel</b> — e as duas tiveram <b>custo por venda abaixo do ticket</b> (R$ 1.240), ou seja, unit economics positiva.</p></div>
     <div class="tblw reveal" style="margin-top:14px">
-      <table>
-        <thead><tr><th>Criativo</th><th>Investido</th><th>Leads</th><th>CPL</th></tr></thead>
+      <table class="crtbl">
+        <thead><tr><th></th><th>Criativo</th><th>Investido</th><th>Vendas</th><th>Custo por venda</th></tr></thead>
         <tbody>
-          <tr><td>AD008_VID_se_dejas_de_trabajar ✓ venda</td><td>R$ 529,63</td><td>10</td><td class="dn">R$ 52,96</td></tr>
-          <tr><td>AD010_VID_si_crees_vivir</td><td>R$ 403,55</td><td>19</td><td>R$ 21,24</td></tr>
-          <tr><td>AD10_VID_desejas</td><td>R$ 313,74</td><td>22</td><td class="up">R$ 14,26</td></tr>
-          <tr><td>AD009_VID_Get_hired_por_dentro ✓ venda</td><td>R$ 202,65</td><td>5</td><td class="dn">R$ 40,53</td></tr>
-          <tr><td>AD09_VID_Experiencia</td><td>R$ 198,48</td><td>10</td><td>R$ 19,85</td></tr>
-          <tr><td>AD011_VID_si_participaste_el_mapa</td><td>R$ 185,14</td><td>3</td><td class="dn">R$ 61,71</td></tr>
-          <tr><td>AD002_IMG_trabajas_desde_casa</td><td>R$ 173,60</td><td>9</td><td>R$ 19,28</td></tr>
-          <tr><td>AD01_VID_se_dejas_de_trabajar</td><td>R$ 170,26</td><td>5</td><td>R$ 34,05</td></tr>
-          <tr><td>Outros 6 criativos</td><td>R$ 369,37</td><td>7</td><td class="dn">R$ 52,77</td></tr>
-          <tr class="tot"><td>Total · vendas</td><td>R$ 2.546,42</td><td>90</td><td>R$ 28,29</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad008-vid-se-dejas-de-trabajar.jpg" alt="AD008"></td><td><a class="crl" href="https://www.instagram.com/p/DdpoTOYAq7O/" target="_blank" rel="noopener">AD008_VID_se_dejas_de_trabajar <span class="ext">ver ↗</span></a></td><td>R$ 529,63</td><td>1</td><td class="up">R$ 529,63</td></tr>
+          <tr><td class="cthc"><img class="cth" src="img/criativos/ad009-vid-get-hired-por-dentro.jpg" alt="AD009"></td><td><a class="crl" href="https://www.instagram.com/p/DdjCETAAFLF/" target="_blank" rel="noopener">AD009_VID_Get_hired_por_dentro <span class="ext">ver ↗</span></a></td><td>R$ 202,65</td><td>1</td><td class="up">R$ 202,65</td></tr>
+          <tr class="tot"><td class="cthc"></td><td>Total · vendas rastreadas</td><td>R$ 732,28</td><td>2</td><td>R$ 366,14</td></tr>
         </tbody>
       </table>
     </div>
