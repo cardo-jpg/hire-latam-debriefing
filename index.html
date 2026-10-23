@@ -170,6 +170,16 @@
   .foot-links a{font-family:var(--mono);font-size:.8rem;font-weight:700;text-decoration:none;color:var(--plum);background:var(--plum-wash);border:1px solid var(--line-2);padding:8px 14px;border-radius:20px;}
   .foot-links a:hover{background:var(--plum);color:#fff;}
   .disclaim{font-size:.74rem;color:var(--ink-soft);margin-top:12px;max-width:72ch;line-height:1.55;}
+  @media print{
+    html{font-size:98%;}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    @page{size:A4;margin:11mm;}
+    .nav{display:none!important;}
+    .hero{padding-top:10px!important;}
+    section{padding:22px 0!important;}
+    .call,.err,.rec,.pat,.row,.stat,.fstep,.letter,.crtbl,figure,img,table,tr{break-inside:avoid;}
+    h2,h3{break-after:avoid;}
+  }
 </style>
 </head>
 <body>
